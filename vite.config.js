@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './To-Do-List',
+  base: '/To-Do-List/',
   plugins: [react()],
   server: {
     open: true
