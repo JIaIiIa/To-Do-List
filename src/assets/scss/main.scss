@@ -64,6 +64,8 @@ body {
     align-items: center;
     z-index: 1;
     position: relative;
+    background: #fdf5e2;
+    height: 55px;
 
     &.disabled {
         border: 1px solid green;
@@ -90,7 +92,7 @@ body {
 
 .post__save,
 .post__cancel {
-    padding: 10px 15px;
+    padding: 7px 15px;
     border: 1px solid #333;
     border-radius: 10px;
     cursor: pointer;
@@ -150,7 +152,7 @@ body {
 
     .post__editing-wrapper {
         position: absolute;
-        top: 130%;
+        top: 117%;
         display: flex;
         align-items: center;
         gap: 5px;
@@ -208,14 +210,19 @@ body {
     padding: 5px;
 }
 
-.post-form__date {
-    max-width: 165px;
-}
+
 
 .form-wrapper {
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 44px;
+
+    .post-form__date {
+        max-width: 165px;
+        height: 100%;
+        color: black;
+    }
 }
 
 @media (max-width: 768px) {
