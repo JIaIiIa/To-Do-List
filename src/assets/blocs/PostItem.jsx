@@ -55,10 +55,10 @@ const PostItem = ({ title, text, done, onDone, onDeletePost, textDone, onEditPos
                 <button onClick={onDone}
                  className={`post__done ${isEditing ? 'disabled' : ''}`} disabled={isEditing}>{textDone}</button>
                 {isEditing ? (
-                    <>
+                    <div className='post__editing-wrapper'>
                         <button onClick={handleSave} className='post__save'>Save</button>
                         <button onClick={handleCancel} className='post__cancel'>Cancel</button>
-                    </>
+                    </div>
                 ) : (
                     <button
                         className={`post__edit ${done ? 'disabled' : ''}`}
